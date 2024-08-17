@@ -1,0 +1,1 @@
+# A logback 1.3.x starter for spring boot 2.7.x
