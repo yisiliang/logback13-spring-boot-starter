@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<springProfile name="production">
+		<logger name="com.github.yisiliang.starter.logback13" level="TRACE" />
+	</springProfile>
+</configuration>

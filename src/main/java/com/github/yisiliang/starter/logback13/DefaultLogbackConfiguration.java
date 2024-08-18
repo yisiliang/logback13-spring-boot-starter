@@ -11,9 +11,6 @@ import ch.qos.logback.core.spi.ScanException;
 import ch.qos.logback.core.util.FileSize;
 import ch.qos.logback.core.util.OptionHelper;
 import org.springframework.boot.logging.LogFile;
-import org.springframework.boot.logging.logback.ColorConverter;
-import org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter;
-import org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter;
 
 import java.nio.charset.Charset;
 

@@ -32,8 +32,6 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.Marker;
 import org.slf4j.bridge.SLF4JBridgeHandler;
 import org.springframework.boot.logging.*;
-import org.springframework.boot.logging.logback.LogbackLoggingSystem;
-import org.springframework.boot.logging.logback.LogbackLoggingSystemProperties;
 import org.springframework.core.Ordered;
 import org.springframework.core.SpringProperties;
 import org.springframework.core.annotation.Order;
@@ -123,7 +121,7 @@ public class Logback13LoggingSystem extends Slf4JLoggingSystem {
         loggerContext.getTurboFilterList().remove(FILTER);
         markAsInitialized(loggerContext);
         if (StringUtils.hasText(System.getProperty(CONFIGURATION_FILE_PROPERTY))) {
-            getLogger(LogbackLoggingSystem.class.getName()).warn("Ignoring '" + CONFIGURATION_FILE_PROPERTY
+            getLogger(Logback13LoggingSystem.class.getName()).warn("Ignoring '" + CONFIGURATION_FILE_PROPERTY
                     + "' system property. Please use 'logging.config' instead.");
         }
     }
@@ -330,7 +328,7 @@ public class Logback13LoggingSystem extends Slf4JLoggingSystem {
     }
 
     /**
-     * {@link LoggingSystemFactory} that returns {@link LogbackLoggingSystem} if possible.
+     * {@link LoggingSystemFactory} that returns {@link Logback13LoggingSystem} if possible.
      */
     @Order(Ordered.LOWEST_PRECEDENCE - 100)
     public static class Factory implements LoggingSystemFactory {
