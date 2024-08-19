@@ -16,7 +16,7 @@
 
 package org.springframework.boot.logging;
 
-import com.github.yisiliang.starter.logback13.Logback13LoggingSystem;
+import io.github.yisiliang.starter.logback13.Logback13LoggingSystem;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 

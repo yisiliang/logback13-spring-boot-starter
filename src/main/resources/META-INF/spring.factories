@@ -1,1 +1,1 @@
-org.springframework.boot.logging.LoggingSystemFactory=com.github.yisiliang.starter.logback13.Logback13LoggingSystem.Factory
+org.springframework.boot.logging.LoggingSystemFactory=io.github.yisiliang.starter.logback13.Logback13LoggingSystem.Factory
